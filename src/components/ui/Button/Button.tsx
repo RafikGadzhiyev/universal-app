@@ -45,6 +45,7 @@ function Button(props: IButtonProps) {
 
   return (
     <button
+      type="button"
       {...tagProps}
       className={mergedClasses}
     >
