@@ -1,0 +1,100 @@
+@import "../../../index.css";
+
+:root {
+    --cp-input-current-color: transparent;
+    --cp-input-hover-color: transparent;
+    --cp-input-active-color: transparent;
+    --cp-input-text-color: black;
+}
+
+.cp-input {
+    @apply transition rounded-sm outline-none;
+}
+
+.cp-input__sparse {
+    @apply p-2
+}
+
+.cp-input__dense {
+    @apply py-0.5 px-2
+}
+
+.cp-input:disabled {
+    @apply cursor-not-allowed;
+}
+
+/* ~ VARIANTS ~ */
+.cp-input__filled {
+    @apply shadow-md;
+
+    color: var(--cp-input-text-color);
+    background-color: var(--cp-input-current-color);
+}
+
+.cp-input__filled:hover,
+.cp-input__filled:focus {
+    background-color: var(--cp-input-hover-color);
+}
+
+.cp-input__outlined {
+    @apply border-2;
+
+    color: var(--cp-input-current-color);
+    border-color: var(--cp-input-current-color);
+}
+
+.cp-input__outlined:hover,
+.cp-input__outlined:focus {
+    border-color: var(--cp-input-hover-color)
+}
+
+
+/* ~ PALETTE ~ */
+.cp-input__primary {
+    --cp-input-text-color: var(--color-white);
+    --cp-input-current-color: var(--color-primary-500);
+    --cp-input-hover-color: var(--color-primary-400);
+    --cp-input-active-color: var(--color-primary-600);
+}
+
+.cp-input__secondary {
+    --cp-input-text-color: var(--color-white);
+    --cp-input-current-color: var(--color-secondary-500);
+    --cp-input-hover-color: var(--color-secondary-400);
+    --cp-input-active-color: var(--color-secondary-600);
+}
+
+.cp-input__accent {
+    --cp-input-text-color: var(--color-white);
+    --cp-input-current-color: var(--color-accent-500);
+    --cp-input-hover-color: var(--color-accent-300);
+    --cp-input-active-color: var(--color-accent-600);
+}
+
+.cp-input__positive {
+    --cp-input-text-color: var(--color-white);
+    --cp-input-current-color: var(--color-positive-500);
+    --cp-input-hover-color: var(--color-positive-300);
+    --cp-input-active-color: var(--color-positive-600);
+}
+
+.cp-input__negative {
+    --cp-input-text-color: var(--color-white);
+    --cp-input-current-color: var(--color-negative-500);
+    --cp-input-hover-color: var(--color-negative-300);
+    --cp-input-active-color: var(--color-negative-600);
+}
+
+.cp-input__warning {
+    --cp-input-text-color: var(--color-white);
+    --cp-input-current-color: var(--color-warning-500);
+    --cp-input-hover-color: var(--color-warning-300);
+    --cp-input-active-color: var(--color-warning-600);
+}
+
+.cp-input__info {
+    --cp-input-text-color: var(--color-white);
+    --cp-input-current-color: var(--color-info-500);
+    --cp-input-hover-color: var(--color-info-300);
+    --cp-input-active-color: var(--color-info-600);
+}
