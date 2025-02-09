@@ -1,0 +1,13 @@
+@import "../../../index.css";
+
+.cp-card {
+    @apply rounded-sm bg-white;
+}
+
+.cp-card__dense {
+    @apply p-2
+}
+
+.cp-card__sparse {
+    @apply p-5
+}
